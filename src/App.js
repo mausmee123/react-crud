@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Login from "./components/Login";
 import { Routes, Route, } from "react-router-dom";
 import Adduser from "./components/user/Adduser";
+import Showuser from "./components/user/Showuser";
 
 
 function App() {
@@ -14,9 +15,10 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Login />} />
-                <Route path="/Home" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/user/adduser" element={<Adduser />} />
+                <Route path="/user/showuser" element={<Showuser />} />
             </Routes>
         </div>
     );

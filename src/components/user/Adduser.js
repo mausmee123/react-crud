@@ -63,14 +63,14 @@ function Adduser() {
                     <div className="form-group my-2 d-flex">
                         <label><strong>Gender:</strong></label>
                         <div className="form-check mx-2">
-                            <input className="form-check-input" type="radio" name="gender" id="flexRadioDefault1" onChange={e => OnchangeInput(e)}/>
-                            <label className="form-check-label" htmlFor="flexRadioDefault1">
+                            <input className="form-check-input" type="radio" name="gender" onChange={e => OnchangeInput(e)}/>
+                            <label className="form-check-label">
                                 male
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="gender" id="flexRadioDefault2" onChange={e => OnchangeInput(e)}/>
-                            <label className="form-check-label" htmlFor="flexRadioDefault2">
+                            <input className="form-check-input" type="radio" name="gender" onChange={e => OnchangeInput(e)}/>
+                            <label className="form-check-label" >
                                 female
                             </label>
                         </div>
@@ -94,7 +94,7 @@ function Adduser() {
 
                     <div className="form-group my-2 d-flex">
                         <label><strong>Country:</strong></label>
-                        <select name="register_country" onChange={e => OnchangeInput(e)}>
+                        <select name="country" onChange={e => OnchangeInput(e)}>
                             <option value="" selected="selected">india</option>
                             <option value="pakistan">pakistan</option>
                             <option value="africa">africa</option>
