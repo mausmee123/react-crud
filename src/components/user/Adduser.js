@@ -13,29 +13,39 @@ function Adduser() {
         email: "",
         phone: "",
         gender:"",
-        vehicle:[],
+
         country:""
 
     });
 
-    const {name, email, phone, country,vehicle} = user
+    const {name, email, phone, country} = user
     const OnchangeInput = e => {
-        if (e.target.name === "vehicle"){
+        // if (e.target.name === "vehicle"){
             // if (e.target.checked) {
             //     vehicle.push(name.value)
             // } else {
             //     vehicle.pop(name.value)
             // }
-            const isChecked = e.target.checked;
-            if(isChecked){
-                setUser({...user, [e.target.name]:e.target.value })
-            } else {
-
-            }
-        } else {
+            // const isChecked = e.target.checked;
+            // if(isChecked){
+            //     setUser({...user, [e.target.name]:e.target.value })
+            // } else {
+            //
+            // }
+        // } else {
 
             setUser({...user, [e.target.name]:e.target.value })
-        }
+        // }
+    };
+
+    const [isChecked1, setIsChecked1] = useState(false);
+    const [isChecked2, setIsChecked2] = useState(false);
+
+    const handleOnChange1 = () => {
+        setIsChecked1(!isChecked1);
+    };
+    const handleOnChange2 = () => {
+        setIsChecked2(!isChecked2);
     };
 
     const onSubmit = async e => {
@@ -100,13 +110,13 @@ function Adduser() {
                     <div className="form-group my-2 d-flex">
                         <label><strong>Vehicle:</strong></label>
                         <div className="form-check mx-2">
-                            <input className="form-check-input" type="checkbox" value={"car"} name="vehicle"  onChange={e => OnchangeInput(e)}/>
+                            <input className="form-check-input" type="checkbox" value={"car"} name="vehicle"  checked={isChecked1} onChange={handleOnChange1}/>
                             <label className="form-check-label">
                                 car
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value={"bike"} name="vehicle" onChange={e => OnchangeInput(e)}/>
+                            <input className="form-check-input" type="checkbox" value={"bike"} name="vehicle" checked={isChecked2} onChange={handleOnChange2}/>
                             <label className="form-check-label">
                                 bike
                             </label>
