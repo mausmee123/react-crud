@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 
+
 function Adduser() {
+
+
 
     let navigate = useNavigate();
     const [user, setUser] = useState({
@@ -10,13 +13,29 @@ function Adduser() {
         email: "",
         phone: "",
         gender:"",
-        vehicle:"",
+        vehicle:[],
         country:""
+
     });
 
-    const {name, email, phone, gender, vehicle, country} = user
+    const {name, email, phone, country,vehicle} = user
     const OnchangeInput = e => {
-        setUser({...user, [e.target.name]:e.target.value })
+        if (e.target.name === "vehicle"){
+            // if (e.target.checked) {
+            //     vehicle.push(name.value)
+            // } else {
+            //     vehicle.pop(name.value)
+            // }
+            const isChecked = e.target.checked;
+            if(isChecked){
+                setUser({...user, [e.target.name]:e.target.value })
+            } else {
+
+            }
+        } else {
+
+            setUser({...user, [e.target.name]:e.target.value })
+        }
     };
 
     const onSubmit = async e => {
@@ -46,6 +65,7 @@ function Adduser() {
                             className="form-control form-control-lg"
                             placeholder="Enter Your E-mail Address"
                             name="email"
+                            value={email}
                             onChange={e => OnchangeInput(e)}
                         />
                     </div>
@@ -56,6 +76,7 @@ function Adduser() {
                             className="form-control form-control-lg"
                             placeholder="Enter Your Phone Number"
                             name="phone"
+                            value={phone}
                             onChange={e => OnchangeInput(e)}
                         />
                     </div>
@@ -63,14 +84,14 @@ function Adduser() {
                     <div className="form-group my-2 d-flex">
                         <label><strong>Gender:</strong></label>
                         <div className="form-check mx-2">
-                            <input className="form-check-input" type="radio" name="gender" onChange={e => OnchangeInput(e)}/>
+                            <input className="form-check-input" type="radio" value={"male"} name="gender" onChange={e => OnchangeInput(e)}/>
                             <label className="form-check-label">
                                 male
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="gender" onChange={e => OnchangeInput(e)}/>
-                            <label className="form-check-label" >
+                            <input className="form-check-input" type="radio" value={"female"} name="gender" onChange={e => OnchangeInput(e)}/>
+                            <label className="form-check-label">
                                 female
                             </label>
                         </div>
@@ -79,14 +100,14 @@ function Adduser() {
                     <div className="form-group my-2 d-flex">
                         <label><strong>Vehicle:</strong></label>
                         <div className="form-check mx-2">
-                            <input className="form-check-input" type="checkbox" name="vehicle" id="flexRadioDefault1" onChange={e => OnchangeInput(e)}/>
-                            <label className="form-check-label" htmlFor="flexRadioDefault1">
+                            <input className="form-check-input" type="checkbox" value={"car"} name="vehicle"  onChange={e => OnchangeInput(e)}/>
+                            <label className="form-check-label">
                                 car
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" name="vehicle" id="flexRadioDefault2" onChange={e => OnchangeInput(e)}/>
-                            <label className="form-check-label" htmlFor="flexRadioDefault2">
+                            <input className="form-check-input" type="checkbox" value={"bike"} name="vehicle" onChange={e => OnchangeInput(e)}/>
+                            <label className="form-check-label">
                                 bike
                             </label>
                         </div>
@@ -94,12 +115,12 @@ function Adduser() {
 
                     <div className="form-group my-2 d-flex">
                         <label><strong>Country:</strong></label>
-                        <select name="country" onChange={e => OnchangeInput(e)}>
-                            <option value="" selected="selected">india</option>
-                            <option value="pakistan">pakistan</option>
-                            <option value="africa">africa</option>
-                            <option value="china">china</option>
-                            <option value="other">other</option>
+                        <select name="country" value={country} onChange={e => OnchangeInput(e)}>
+                            <option value={""} selected="selected"></option>
+                            <option value={"pakistan"}>pakistan</option>
+                            <option value={"africa"}>africa</option>
+                            <option value={"china"}>china</option>
+                            <option value={"other"}>other</option>
                         </select>
                     </div>
 
