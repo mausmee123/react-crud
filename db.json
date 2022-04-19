@@ -78,42 +78,6 @@
       "email": "",
       "phone": "",
       "gender": "",
-      "vehicle": "bike",
-      "country": "",
-      "id": 22
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "car",
-      "country": "",
-      "id": 23
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "car",
-      "country": "",
-      "id": 24
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "car",
-      "country": "",
-      "id": 25
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
       "vehicle": [
         null,
         null
@@ -129,6 +93,65 @@
       "vehicle": "bike",
       "country": "",
       "id": 27
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "gender": "",
+      "vehicle": "",
+      "country": "",
+      "id": 29
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "gender": "",
+      "vehicle": [],
+      "country": "",
+      "id": 30
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "gender": "",
+      "vehicle": [
+        null,
+        null
+      ],
+      "country": "",
+      "id": 31
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "gender": "",
+      "vehicle": [
+        null
+      ],
+      "country": "",
+      "id": 32
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "gender": "",
+      "vehicle": ",",
+      "country": "",
+      "id": 33
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "gender": "",
+      "vehicle": "bike",
+      "country": "",
+      "id": 34
     }
   ]
 }

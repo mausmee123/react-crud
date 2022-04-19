@@ -90,13 +90,13 @@ function Edituser() {
                 <div className="form-group my-2 d-flex">
                     <label><strong>Vehicle:</strong></label>
                     <div className="form-check mx-2">
-                        <input className="form-check-input" type="checkbox" value={vehicle} name="vehicle" onChange={e => OnchangeInput(e)}/>
+                        <input className="form-check-input" type="checkbox" value={"car"} checked={vehicle.includes("car")} name="vehicle" onChange={e => OnchangeInput(e)}/>
                         <label className="form-check-label">
                             car
                         </label>
                     </div>
                     <div className="form-check">
-                        <input className="form-check-input" type="checkbox" value={vehicle}  name="vehicle" onChange={e => OnchangeInput(e)}/>
+                        <input className="form-check-input" type="checkbox" value={"bike"}  checked={vehicle.includes("bike")} name="vehicle" onChange={e => OnchangeInput(e)}/>
                         <label className="form-check-label">
                             bike
                         </label>
