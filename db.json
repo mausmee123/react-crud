@@ -1,0 +1,76 @@
+{
+  "cuser": [
+    {
+      "vehicle": [],
+      "name": "NHJHJHJ",
+      "id": 2
+    },
+    {
+      "vehicle": [],
+      "country": "china",
+      "id": 3
+    },
+    {
+      "vehicle": [],
+      "name": "rg",
+      "id": 4
+    },
+    {
+      "vehicle": [
+        "bike"
+      ],
+      "name": "qwe",
+      "email": "qwe@gmail.com",
+      "phone": "1234567",
+      "gender": "male",
+      "country": "pakistan",
+      "id": 5
+    },
+    {
+      "vehicle": [
+        "bike",
+        "car"
+      ],
+      "name": "poi",
+      "email": "poi@gmail.com",
+      "phone": "12345678",
+      "gender": "female",
+      "country": "africa",
+      "id": 6
+    },
+    {
+      "vehicle": [
+        "bike",
+        "car"
+      ],
+      "name": "zxc",
+      "email": "zxc@gmail.com",
+      "phone": "12345678",
+      "gender": "male",
+      "country": "pakistan",
+      "id": 7
+    },
+    {
+      "vehicle": [
+        "bike"
+      ],
+      "name": "mnb",
+      "email": "mnb@gmail.com",
+      "phone": "123456",
+      "gender": "male",
+      "country": "africa",
+      "id": 8
+    },
+    {
+      "vehicle": [
+        "bike"
+      ],
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "phone": "897978",
+      "gender": "male",
+      "country": "africa",
+      "id": 9
+    }
+  ]
+}
