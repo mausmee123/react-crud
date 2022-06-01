@@ -65,93 +65,13 @@
       "id": 20
     },
     {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "car",
-      "country": "",
+      "name": "rg",
+      "email": "qwe@gmail.com",
+      "phone": "1234567hjhjj",
+      "gender": "male",
+      "vehicle": "bike",
+      "country": "china",
       "id": 21
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": [
-        null,
-        null
-      ],
-      "country": "",
-      "id": 26
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "bike",
-      "country": "",
-      "id": 27
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "",
-      "country": "",
-      "id": 29
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": [],
-      "country": "",
-      "id": 30
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": [
-        null,
-        null
-      ],
-      "country": "",
-      "id": 31
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": [
-        null
-      ],
-      "country": "",
-      "id": 32
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": ",",
-      "country": "",
-      "id": 33
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "vehicle": "bike",
-      "country": "",
-      "id": 34
     }
   ]
 }
